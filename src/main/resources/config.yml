@@ -1,0 +1,54 @@
+# CosmeticsFitting config
+# Each cosmetic references an ItemsAdder namespace:id (e.g. myaddon:golden_crown)
+# slot: HELMET, CHEST (used for back/wings items rendered as chestplate layer), or PARTICLE
+
+fitting-room:
+  # region corners defining the dressing-room trigger area (set via /fittingroom setpos1 / setpos2)
+  world: world
+  pos1: { x: 0, y: 64, z: 0 }
+  pos2: { x: 0, y: 64, z: 0 }
+  mirror-distance: 2.5   # how far in front of the player the mirror clone stands
+  mirror-offset-y: 0.0
+
+cosmetics:
+  hats:
+    display-name: "&e&lכובעים"
+    slot: HELMET
+    items:
+      - id: "cosmetics:crown_gold"
+        name: "&6כתר זהב"
+      - id: "cosmetics:party_hat"
+        name: "&dכובע מסיבה"
+      - id: "cosmetics:top_hat"
+        name: "&8צילינדר"
+
+  wings:
+    display-name: "&b&lכנפיים"
+    slot: CHEST
+    items:
+      - id: "cosmetics:angel_wings"
+        name: "&fכנפי מלאך"
+      - id: "cosmetics:dragon_wings"
+        name: "&cכנפי דרקון"
+
+  particles:
+    display-name: "&d&lאפקטים"
+    slot: PARTICLE
+    items:
+      - id: "particle:flame_trail"
+        name: "&6שביל אש"
+        particle: FLAME
+      - id: "particle:heart_trail"
+        name: "&dשביל לבבות"
+        particle: HEART
+      - id: "particle:portal_trail"
+        name: "&5שביל פורטל"
+        particle: PORTAL
+
+messages:
+  entered-room: "&aברוך הבא לחדר ההלבשה! פתחנו עבורך תפריט קוסמטיקס."
+  left-room: "&7יצאת מחדר ההלבשה."
+  equipped: "&aהלבשת: %item%"
+  removed: "&7הסרת: %item%"
+  no-permission: "&cאין לך הרשאה."
+  not-in-room: "&cעליך להיות בחדר ההלבשה כדי להשתמש בפקודה זו."
